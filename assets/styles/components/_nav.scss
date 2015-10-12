@@ -1,0 +1,118 @@
+.banner {
+	background-color: $orange;
+	a {
+		color: #fff;
+	}
+
+	.brand {
+		float: left;
+	}
+
+	.nav {
+		@extend .nav-justified;
+		background-color: $orange;
+		position: relative;
+
+
+
+        @media screen and (min-width: $screen-sm-min) {
+			bottom: 15px;
+            margin-left: -20px;
+            margin-right: -20px;
+		}
+
+		a {
+            @media screen and (max-width: $screen-xs-max) {
+              margin-bottom: 0 !important;
+              padding: 20px 0;
+            }
+			&:hover, &:focus {
+				background-color: $red;
+			}
+		}
+
+
+
+		@media screen and (min-width: $screen-sm-min) {
+			&:before {
+				border-top: 15px solid darken($orange,10%);
+			    border-left: 15px solid $orange;
+			    left: 0;
+			}
+			li:last-of-type:after {
+				border-top: 15px solid darken($orange,10%);
+			    border-right: 15px solid $orange;
+			    right: 0;
+			}
+			&:before, li:last-of-type:after {
+				content: ' ';
+			    display: inline-block;
+			    width: 0;
+			    position: absolute;
+			    vertical-align: top;
+			    bottom: -15px;
+			    z-index: 22;
+			}
+
+			&:after {
+				content: ' ';
+				display: block;
+				position: absolute;
+				bottom: -15px;
+				width: 100%;
+				background-color: #fff;
+				height: 15px;
+			}
+		}
+	}
+
+}
+
+.js nav[role=navigation] {
+  width: 16em;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -16em;
+  background-color: $brand-primary;
+
+  .nav {
+	@media screen and (max-width: $screen-xs-max) {
+	  float: none !important;
+	}
+  }
+
+  li {
+	@media screen and (max-width: $screen-xs-max) {
+	  float: none;
+	  border-bottom: 1px solid #fff;
+	}
+	@media screen and (min-width: $screen-sm-min) {
+	  margin-top: 8px;
+	}
+  }
+
+  li a {
+	@media screen and (max-width: $screen-xs-max) {
+	  color: #fff;
+	  display: block;
+
+	  &:hover, &:focus {
+		background-color: $brand-secondary;
+	  }
+	}
+  }
+
+  .nav-pills > li + li {
+	margin-left: 0;
+  }
+
+
+  @media screen and (min-width: $screen-sm-min) {
+	max-width: none;
+	position: static;
+	width: auto;
+	background-color: transparent;
+  }
+}
+

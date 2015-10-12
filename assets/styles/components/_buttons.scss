@@ -1,0 +1,34 @@
+.btn {
+	font-family: $font-family-serif;
+
+	@media screen and (max-width: $screen-xs-max) {
+		display: block;
+	}
+}
+
+.btn-secondary {
+  background-color: $brand-secondary;
+  color: #fff;
+
+  &:focus, &:hover {
+	color: #fff;
+	background-color: darken($brand-secondary,5%);
+  }
+}
+
+.navbar-toggle {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	background-color: $brand-primary;
+    border: none;
+    color: #fff;
+    z-index: 2;
+    font-family: $headings-font-family;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+
+    @media screen and (min-width: $screen-sm-min) {
+      display: none;
+    }
+}

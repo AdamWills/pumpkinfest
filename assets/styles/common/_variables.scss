@@ -1,0 +1,28 @@
+// Glyphicons font path
+$icon-font-path:        "../fonts/";
+
+// Grid settings
+$main-sm-columns:       	12;
+$sidebar-sm-columns:    	4;
+$grid-gutter-width:         80px !default;
+
+// Colors
+$orange:					#EF8500;
+$purple:					#0A0024;
+$blue:						#001A26;
+$yellow:					#E2DB95;
+$red:						#DF4E39;
+
+$brand-primary:         	$orange; // orange
+$brand-secondary: 			$blue; //brown
+
+// Borders
+$border-radius-base: 		0;
+$border-radius-large:		0;
+$border-radius-small:		0;
+
+// Fonts
+$font-family-sans-serif:  	'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       	'Source Serif Pro', Georgia, "Times New Roman", Times, serif !default;
+$headings-font-family: 		$font-family-serif;
+$headings-font-weight:    	600;

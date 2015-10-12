@@ -1,0 +1,20 @@
+.content-info {
+	margin-top: 1em;
+	background-color: $orange;
+	padding: 1em 0;
+	margin-bottom: 1em;
+	
+	.menu {
+		@extend .list-inline;
+	}
+
+	a {
+		color: #fff;
+	}
+
+	.menu {
+		@extend .nav-justified;
+	}
+
+
+}

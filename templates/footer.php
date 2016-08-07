@@ -19,14 +19,14 @@
         <address>
           Mailing Address:
           c/o Waterford Lions/Lioness Pumpkinfest
-          PO Box 83
+          PO Box 815
           Waterford, ON N0E 1Y0
         </address>
       </div>
       <div class="col-sm-4">
         Phone: <a href="tel:5194434944">519-443-4944</a>
         Email: <a href="mailto:pumpkinfest@pumpkinfest.com">pumpkinfest@pumpkinfest.com</a>
-        
+
       </div>
     </div>
     <hr>
